@@ -1,7 +1,10 @@
-body {
-    margin: 0px;
-    
-}
+html, body {
+    height: 100%; 
+    margin: 0;    
+    display: flex;
+    flex-direction: column; 
+  }
+
 .navbar {
     display:flex;
     justify-content: space-between;
@@ -33,7 +36,9 @@ body {
 main {
     display: grid;
     grid-template-columns: auto 1fr;
-    height: 87vh;
+    flex-grow: 1;
+
+    
     
 }
 
@@ -54,6 +59,7 @@ main {
         padding-left: 10px;
         padding-right: 10px;
         margin:0px;
+        color: black;
     }
 
     .blog {
